@@ -69,26 +69,6 @@ graph TD
     Social --> MongoDB
     Social --> Redis[(Redis Cache)]
 
-
-```markdown
-# 🚀 Nexa Social Media Platform
-
-![Nexa Banner](https://img.shields.io/badge/NEXA-Social_Media_Platform-blue?style=for-the-badge&logo=rocket)
-
-<div align="center">
-
-[![Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen?style=flat-square)](#)
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=flat-square)](https://github.com/yourusername/neza-social-media)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
-[![Build](https://img.shields.io/badge/Build-Passing-green?style=flat-square)](#)
-[![Coverage](https://img.shields.io/badge/Coverage-85%25-orange?style=flat-square)](#)
-
-**Nexa** is a high-performance, full-stack social ecosystem. Designed for real-time engagement, secure data handling, and seamless scalability.
-
-[Explore Demo](https://neza-app.vercel.app) • [API Docs](https://api.neza.app/docs) • [Report Bug](https://github.com/yourusername/neza-social-media/issues)
-
-</div>
-
 ---
 
 ## 📖 Table of Contents
