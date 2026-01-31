@@ -50,25 +50,23 @@
 
 ---
 
-## 🏗️ System Architecture
-
-```mermaid
-graph TD
-    User((User)) --> Cloudflare[Cloudflare/CDN]
-    Cloudflare --> LB[Nginx Load Balancer]
-    LB --> React[React Frontend]
-    LB --> Gateway[API Gateway]
-    
-    subgraph Microservices
-    Gateway --> Auth[Auth Service]
-    Gateway --> Social[Post Service]
-    Gateway --> UserSvc[User Service]
-    end
-
-    Auth --> MongoDB[(MongoDB)]
-    Social --> MongoDB
-    Social --> Redis[(Redis Cache)]
-
+🏗️ Architecture
+graph TB
+    A[Client Browser] --> B[CDN/Cloudflare]
+    B --> C[Load Balancer]
+    C --> D[Frontend - React]
+    C --> E[API Gateway]
+    E --> F[Auth Service]
+    E --> G[Post Service]
+    E --> H[User Service]
+    E --> I[Notification Service]
+    F --> J[(MongoDB)]
+    G --> J
+    H --> J
+    I --> K[(Redis Cache)]
+    L[WebSocket Server] --> M[Real-time Updates]
+    N[Worker Queue] --> O[Background Jobs]
+📦 Tech Stack
 ---
 
 ## 📖 Table of Contents
